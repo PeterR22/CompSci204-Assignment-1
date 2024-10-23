@@ -4,6 +4,13 @@ flexibility to handle cases where records in the "many" table might not have cor
 So, while a foreign key allows you to create a relationship between tables, whether that foreign key can be NULL is determined by
 how you define the column in the table schema. It’s not automatically deemed NULL just because it is a foreign key.
 
+The order of the data in the INSERT INTO statement is crucial, as it must match the order of the columns specified. Always ensure that the values align correctly with their corresponding columns to avoid errors or unintended data entries.
+
+Syntax for inserting data into tables is:
+Insert Into TableName (FirstColumn, SecondColumn, ThirdColumn,...)
+VALUES (column1value, column2value, column3value,...);
+
+
 Syntax for creating tables is:
 Create Table ReplaceWithTableName (
 fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
