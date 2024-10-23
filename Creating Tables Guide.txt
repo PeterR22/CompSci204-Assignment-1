@@ -1,5 +1,6 @@
 A 0 to many relationship could be another way of saying On Delete Set Null for a foreign key value?
-Answer: Allowing the foreign key to be NULL is essential for accommodating a zero-to-many relationship. It provides the necessary flexibility to handle cases where records in the "many" table might not have corresponding records in the "one" table.
+Answer: Allowing the foreign key to be NULL is essential for accommodating a zero-to-many relationship. It provides the necessary
+flexibility to handle cases where records in the "many" table might not have corresponding records in the "one" table.
 So, while a foreign key allows you to create a relationship between tables, whether that foreign key can be NULL is determined by
 how you define the column in the table schema. It’s not automatically deemed NULL just because it is a foreign key.
 
