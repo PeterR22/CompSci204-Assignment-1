@@ -1,3 +1,5 @@
+A 0 to many relationship could be another way of saying On Delete Set Null for a foreign key value?
+
 Syntax for creating tables is:
 Create Table Insert ReplaceWithTableName (
 fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
