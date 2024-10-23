@@ -5,7 +5,7 @@ So, while a foreign key allows you to create a relationship between tables, whet
 how you define the column in the table schema. It’s not automatically deemed NULL just because it is a foreign key.
 
 Syntax for creating tables is:
-Create Table Insert ReplaceWithTableName (
+Create Table ReplaceWithTableName (
 fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
 fieldvalueName NOT NULL (if field cannot be Null, such as an Id field)
 PRIMARY KEY (ReplaceWithFieldValueName, andfieldvalueName2ifNeeded)
