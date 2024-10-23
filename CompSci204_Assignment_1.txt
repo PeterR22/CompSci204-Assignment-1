@@ -1,4 +1,4 @@
-Create Table Insert Client(
+Create Table Client(
 ClientID INT NOT NULL,
 PRIMARY KEY (ClientID),
 ClientFirstName VarChar(80),
@@ -7,7 +7,7 @@ ClientDOB YEAR,
 Occupation Varchar(80),
 )
 
-Create Table Insert Borrower(
+Create Table Borrower(
 BorrowID INT NOT NULL,
 PRIMARY KEY (BorrowID),
 ClientID INT, --Able to be null to satisfy zero to many relationship from Client table
@@ -17,7 +17,7 @@ BookID INT -- Able to be null to satisfy zero to many relationship from Book tab
 FOREIGN KEY (BookID) REFERENCES Book(BookID) ON DELETE SET NULL
 )
 
-Create Table Insert Book (
+Create Table Book (
 BookID INT NOT NULL,
 PRIMARY KEY (BookID),
 BookTitle VarChar(200),
@@ -26,7 +26,7 @@ FOREIGN KEY (AuthorID) REFERENCES Author(AuthorID),
 Genre VarChar(100)
 )
 
-Create Table Insert Author(
+Create Table Author(
 AuthorID INT NOT NULL,
 PRIMARY KEY (AuthorID),
 AuthorFirstName VarChar(80),
