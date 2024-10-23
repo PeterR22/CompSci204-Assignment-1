@@ -13,9 +13,9 @@ VALUES (column1value, column2value, column3value,...);
 
 Syntax for creating tables is:
 Create Table ReplaceWithTableName (
-fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
-fieldvalueName NOT NULL (if field cannot be Null, such as an Id field)
-PRIMARY KEY (ReplaceWithFieldValueName, andfieldvalueName2ifNeeded)
+fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded),
+fieldvalueName NOT NULL (if field cannot be Null, such as an Id field),
+PRIMARY KEY (ReplaceWithFieldValueName, andfieldvalueName2ifNeeded),
 FOREIGN KEY (fieldvalueName) REFERENCES ReplaceWithOtherTableNameSharesVariable(ReplaceWithSameFieldValueName)
 );
 
