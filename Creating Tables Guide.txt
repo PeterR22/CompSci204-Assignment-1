@@ -17,7 +17,7 @@ fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
 fieldvalueName NOT NULL (if field cannot be Null, such as an Id field)
 PRIMARY KEY (ReplaceWithFieldValueName, andfieldvalueName2ifNeeded)
 FOREIGN KEY (fieldvalueName) REFERENCES ReplaceWithOtherTableNameSharesVariable(ReplaceWithSameFieldValueName)
-)
+);
 
 Field Value Types
 MySQL supports a variety of data types to accommodate different kinds of data. Here's a breakdown of the main categories and their corresponding types:
