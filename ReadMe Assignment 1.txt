@@ -561,3 +561,15 @@ How to Submit Your Assignment
 When you are ready to submit your assignment, please fill out the submission form and copy your code into a Microsoft Word document or .txt file. You should receive your assignment grade within one week.
 
 If you are not satisfied with the score you receive on your assignment, you may revise or rewrite it, and resubmit them for grading using the same submission form above. Keep in mind that the grade you receive on your assignment is only a portion of your overall grade for the course. Please see the course syllabus for a more detailed breakdown of the grading policy.
+
+- Chapter 3 Lesson 13
+Example of table creation and insertion of data into table.
+-Chapter 4 Lesson 3
+DML commands (Select, Update, Insert, and Delete)
+-Chapter 5 full
+Displays Joins and how to perform Joins.
+-Chapter 6
+How to on learning and performing Subqueries
+-Chapter 7 Lesson 3
+Starts tutorial on creating Indexes
+
