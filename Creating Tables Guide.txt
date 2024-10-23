@@ -1,0 +1,52 @@
+Syntax for creating tables is:
+Create Table Insert ReplaceWithTableName (
+fieldvalueName ReplaceWithFieldValueType(andAmountIfNeeded)
+fieldvalueName NOT NULL (if field cannot be Null, such as an Id field)
+PRIMARY KEY (ReplaceWithFieldValueName, andfieldvalueName2ifNeeded)
+FOREIGN KEY (fieldvalueName) REFERENCES ReplaceWithOtherTableNameSharesVariable(ReplaceWithSameFieldValueName)
+)
+
+Field Value Types
+MySQL supports a variety of data types to accommodate different kinds of data. Here's a breakdown of the main categories and their corresponding types:
+
+### Numeric Types
+1. **TINYINT**: Very small integer (-128 to 127 or 0 to 255).
+2. **SMALLINT**: Small integer (-32,768 to 32,767 or 0 to 65,535).
+3. **MEDIUMINT**: Medium-sized integer (-8,388,608 to 8,388,607 or 0 to 16,777,215).
+4. **INT (or INTEGER)**: Standard integer (-2,147,483,648 to 2,147,483,647 or 0 to 4,294,967,295).
+5. **BIGINT**: Large integer (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 or 0 to 18,446,744,073,709,551,615).
+6. **FLOAT**: Floating-point number (approximate values).
+7. **DOUBLE**: Double-precision floating-point number (more precision than FLOAT).
+8. **DECIMAL (or NUMERIC)**: Exact fixed-point number; defined with precision and scale (e.g., `DECIMAL(10,2)`).
+
+### Date and Time Types
+1. **DATE**: Date value (YYYY-MM-DD).
+2. **DATETIME**: Date and time (YYYY-MM-DD HH:MM:SS).
+3. **TIMESTAMP**: Timestamp value (automatically updates to current time when a row is modified).
+4. **TIME**: Time value (HH:MM:SS).
+5. **YEAR**: Year value (in either 2-digit or 4-digit format).
+
+### String Types
+1. **CHAR**: Fixed-length string (1 to 255 characters).
+2. **VARCHAR**: Variable-length string (1 to 65,535 characters).
+3. **TEXT**: Large text string (up to 65,535 characters).
+4. **TINYTEXT**: Very small text string (up to 255 characters).
+5. **MEDIUMTEXT**: Medium-sized text string (up to 16,777,215 characters).
+6. **LONGTEXT**: Very large text string (up to 4,294,967,295 characters).
+7. **BINARY**: Fixed-length binary data.
+8. **VARBINARY**: Variable-length binary data.
+9. **BLOB**: Binary Large Object for storing binary data (up to 65,535 bytes).
+10. **TINYBLOB**: Very small BLOB (up to 255 bytes).
+11. **MEDIUMBLOB**: Medium-sized BLOB (up to 16,777,215 bytes).
+12. **LONGBLOB**: Very large BLOB (up to 4,294,967,295 bytes).
+13. **ENUM**: String object with a value chosen from a list of permitted values.
+14. **SET**: A string object that can have zero or more values from a predefined set.
+
+### Spatial Types
+1. **GEOMETRY**: A geometric object.
+2. **POINT**: A point in 2D space.
+3. **LINESTRING**: A line consisting of two or more points.
+4. **POLYGON**: A polygon defined by points.
+5. **MULTIPOINT, MULTILINESTRING, MULTIPOLYGON**: Collections of the above geometries.
+
+These types allow for a wide range of data storage and manipulation, making MySQL a versatile choice for various applications.
