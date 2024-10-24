@@ -1,0 +1,24 @@
+/* Top borrowed genres for client born in years 1970-1980 */
+Select B.Genre
+from Book B
+Inner Join Borrower Br On B.BookID = Br.BookID
+Inner Join Client C On Br.ClientID = C.ClientID
+Where C.ClientDOB >= '1970-01-01' And C.ClientDOB <= '1980-12-31'
+Group By B.Genre
+Order By Count(Br.BookID) Desc;
+
+Output:
+
++------------+
+| Genre      |
++------------+
+| Science    |
+| Fiction    |
+| Well being |
+| Humor      |
+| Society    |
+| Law        |
+| Literature |
+| Children   |
+| History    |
++------------+
