@@ -1,1 +1,23 @@
+/* Nationalities of the least 5 authors that clients borrowed during the years 2015-2017
+January has 31 days and is the first month of the year.
+December has 31 days and is the twelfth month of the year.*/
+Select A.AuthorNationality, Count(Br.BookID)
+from Author A
+Inner Join Book B On A.AuthorID = B.AuthorID
+Left Join Borrower Br On Br.BookID = B.BookID
+Where Br.BorrowDate >= '2015-01-01' And Br.BorrowDate <= '2017-12-31'
+Group By A.AuthorNationality
+Order By Count(Br.BookID) ASC
+Limit 5;
 
+Output:
+
++-------------------+------------------+
+| AuthorNationality | Count(Br.BookID) |
++-------------------+------------------+
+| Spain             |                3 |
+| Great Britain     |                6 |
+| China             |                7 |
+| Brazil            |               18 |
+| France            |               24 |
++-------------------+------------------+
