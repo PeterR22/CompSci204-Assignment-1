@@ -1,0 +1,90 @@
+/* First names, last names, ages and occupations of all clients */
+Select ClientFirstName, ClientLastName, (Year(CurDate())-ClientDOB) As Age
+from Client;
+
+Output:
+
++-----------------+----------------+------+
+| ClientFirstName | ClientLastName | Age  |
++-----------------+----------------+------+
+| Kaiden          | Hill           |   18 |
+| Alina           | Morton         |   14 |
+| Fania           | Brooks         |   41 |
+| Courtney        | Jensen         |   18 |
+| Brittany        | Hill           |   41 |
+| Max             | Rogers         |   19 |
+| Margaret        | McCarthy       |   43 |
+| Julie           | McCarthy       |   51 |
+| Ken             | McCarthy       |   50 |
+| Britany         | O'Quinn        |   40 |
+| Conner          | Gardner        |   26 |
+| Mya             | Austin         |   64 |
+| Thierry         | Rogers         |   20 |
+| Eloise          | Rogers         |   40 |
+| Gerard          | Jackson        |   45 |
+| Randy           | Day            |   38 |
+| Jodie           | Page           |   34 |
+| Coral           | Rice           |   28 |
+| Ayman           | Austin         |   22 |
+| Jaxson          | Austin         |   25 |
+| Joel            | Austin         |   51 |
+| Alina           | Austin         |   14 |
+| Elin            | Austin         |   62 |
+| Ophelia         | Wolf           |   20 |
+| Eliot           | McGuire        |   57 |
+| Peter           | McKinney       |   56 |
+| Annabella       | Henry          |   50 |
+| Anastasia       | Baker          |   23 |
+| Tyler           | Baker          |   40 |
+| Lilian          | Ross           |   41 |
+| Thierry         | Arnold         |   49 |
+| Angelina        | Rowe           |   45 |
+| Marcia          | Rowe           |   50 |
+| Martin          | Rowe           |   48 |
+| Adeline         | Rowe           |   19 |
+| Colette         | Rowe           |   61 |
+| Diane           | Clark          |   49 |
+| Caroline        | Clark          |   64 |
+| Dalton          | Clayton        |   42 |
+| Steve           | Clayton        |   34 |
+| Melanie         | Clayton        |   37 |
+| Alana           | Wilson         |   17 |
+| Carson          | Byrne          |   29 |
+| Conrad          | Byrne          |   17 |
+| Ryan            | Porter         |   16 |
+| Elin            | Porter         |   46 |
+| Tyler           | Harvey         |   17 |
+| Arya            | Harvey         |   16 |
+| Serena          | Harvey         |   46 |
+| Lilly           | Franklin       |   48 |
+| Mai             | Franklin       |   30 |
+| John            | Franklin       |   25 |
+| Judy            | Franklin       |   29 |
+| Katy            | Lloyd          |   32 |
+| Tamara          | Allen          |   61 |
+| Maxim           | Lyons          |   39 |
+| Allan           | Lyons          |   41 |
+| Marc            | Harris         |   44 |
+| Elin            | Young          |   15 |
+| Diana           | Young          |   16 |
+| Diane           | Young          |   18 |
+| Alana           | Bird           |   21 |
+| Anna            | Becker         |   45 |
+| Katie           | Grant          |   47 |
+| Joan            | Grant          |   14 |
+| Bryan           | Bell           |   23 |
+| Belle           | Miller         |   54 |
+| Peggy           | Stevens        |   34 |
+| Steve           | Williamson     |   49 |
+| Tyler           | Williamson     |   25 |
+| Izabelle        | Williamson     |   34 |
+| Annabel         | Williamson     |   64 |
+| Mohamed         | Waters         |   58 |
+| Marion          | Newman         |   54 |
+| Ada             | Williams       |   38 |
+| Sean            | Scott          |   41 |
+| Farrah          | Scott          |   50 |
+| Christine       | Lambert        |   51 |
+| Alysha          | Lambert        |   17 |
+| Maia            | Grant          |   40 |
++-----------------+----------------+------+
