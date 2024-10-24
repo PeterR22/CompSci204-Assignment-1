@@ -1,8 +1,24 @@
-/* First and last names of the top 5 authors clients borrowed in 2017 */
+/* First and last names of the top 5 authors clients borrowed in 2017 
+Notes: December has 31 days, and is the 12th month of the Year.
+*/
+
 Select A.AuthorFirstName, A.AuthorLastName, Count(B.BookID)
 from Author A
 Inner Join Book B On A.AuthorID = B.AuthorID
 Inner Join Borrower Br On Br.BookID = B.BookID
+Where Br.BorrowDate >= '2017-01-01' And Br.BorrowDate <= '2017-12-31'
 Group By A.AuthorFirstName, A.AuthorLastName
 Order By Count(B.BookID) DESC
 Limit 5;
+
+Output:
+
++-----------------+----------------+-----------------+
+| AuthorFirstName | AuthorLastName | Count(B.BookID) |
++-----------------+----------------+-----------------+
+| Sofia           | Smith          |               7 |
+| Elena           | Martin         |               7 |
+| Logan           | Moore          |               7 |
+| Maria           | Brown          |               6 |
+| Zoe             | Roy            |               5 |
++-----------------+----------------+-----------------+
