@@ -1,0 +1,28 @@
+/*
+Notes: Order of Clauses
+SELECT
+FROM
+JOIN (if any)
+WHERE
+GROUP BY
+HAVING (if any)
+ORDER BY
+LIMIT (if any)
+
+Goal: The book that was most borrowed during the years 2015-2017  */
+
+Select B.BookTitle, Count(Br.BookID)
+from Book B
+Inner Join Borrower Br On Br.BookID = B.BookID
+Where Br.BorrowDate >= '2015-01-01' And Br.BorrowDate <= '2017-12-31'
+Group By B.BookTitle
+Order By Count(Br.BookID) Desc
+Limit 1;
+
+Output:
+
++-------------------+------------------+
+| BookTitle         | Count(Br.BookID) |
++-------------------+------------------+
+| The perfect match |               13 |
++-------------------+------------------+
