@@ -1,0 +1,24 @@
+/* First and last names of clients that borrowed books in March 2018
+Notes: March is the third month, and the month has 31 days.
+Data is in Year Month Day format.
+*/
+
+Select C.ClientFirstName, C.ClientLastName
+From Client C
+Inner Join Borrower B on C.ClientID = B.ClientID
+Where BorrowDate >= '2018-03-01' AND BorrowDate <= '2018-03-31';
+
+Output:
+
++-----------------+----------------+
+| ClientFirstName | ClientLastName |
++-----------------+----------------+
+| Gerard          | Jackson        |
+| Tyler           | Baker          |
+| Angelina        | Rowe           |
+| Marcia          | Rowe           |
+| Carson          | Byrne          |
+| Katy            | Lloyd          |
+| Alysha          | Lambert        |
+| Maia            | Grant          |
++-----------------+----------------+
