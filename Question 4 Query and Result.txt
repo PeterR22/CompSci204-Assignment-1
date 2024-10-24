@@ -1,0 +1,8 @@
+/* First and last names of the top 5 authors clients borrowed in 2017 */
+Select A.AuthorFirstName, A.AuthorLastName, Count(B.BookID)
+from Author A
+Inner Join Book B On A.AuthorID = B.AuthorID
+Inner Join Borrower Br On Br.BookID = B.BookID
+Group By A.AuthorFirstName, A.AuthorLastName
+Order By Count(B.BookID) DESC
+Limit 5;
