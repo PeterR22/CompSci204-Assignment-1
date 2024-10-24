@@ -20,7 +20,11 @@ A. Write the SQL statements in order to create the tables for the database. Use 
 
 Figure 1: ERD for Library Database
 ERD Diagram
-
+Client Table has a 0 to many relationship with the Borrower Table.
+Borrower Table has a 1 to many relationship with the Client Table.
+Book Table has a 0 to many relationship with the Borrower Table.
+Borrower tables has a 0 to 1 relationship with the Book Table.
+Author Table has a 1 to many relationship with the Book Table.
 
 B. Populate your database with the sample set of data given to you in the tables below the assignment prompts.
 
